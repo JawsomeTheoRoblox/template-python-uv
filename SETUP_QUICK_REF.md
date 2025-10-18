@@ -4,16 +4,13 @@
 
 ```bash
 # Setup (uses existing or downloads portable Python)
-./setup-portable.sh
+./setup.sh
 
 # Clean rebuild (removes everything, starts fresh)
-./setup-portable.sh --force-clean
+./setupsh --force-clean
 
 # Show help
-./setup-portable.sh --help
-
-# Create distributable package
-./package-portable.sh
+./setup.sh --help
 ```
 
 ## 📊 Quick Decision Guide
@@ -24,9 +21,6 @@ First time?
 
 Something broken?
 └─ ./setup-portable.sh --force-clean
-
-Ready to distribute?
-└─ ./package-portable.sh
 
 Changed dependencies?
 ├─ Edit pyproject.toml
@@ -41,7 +35,6 @@ Changed dependencies?
 | **Daily development** | `source .venv/bin/activate` → `python src/main.py` |
 | **Add dependency** | Edit `pyproject.toml` → `uv lock` → `uv sync` |
 | **Fix issues** | `./setup-portable.sh --force-clean` |
-| **Create package** | `./package-portable.sh` |
 | **Complete reset** | `./setup-portable.sh --force-clean` |
 
 ## 📁 What Gets Created
@@ -68,7 +61,6 @@ dist/             # Packages (~50MB compressed, gitignored)
 | First setup (download) | 1-2 min | Required |
 | Reuse existing Python | 10-30 sec | Optional |
 | Clean rebuild | 1-2 min | Required |
-| Package creation | 10-20 sec | No |
 
 ## 💾 Disk Space
 
@@ -103,21 +95,6 @@ source .venv/bin/activate && pip install --upgrade uv
 
 # Dependencies out of sync
 uv lock && uv sync
-```
-
-## 📦 Package Distribution
-
-```bash
-# 1. Create package
-./package-portable.sh
-
-# 2. Send to user
-scp dist/my-app-1.0.0-portable.tar.gz user@server:
-
-# 3. User extracts and runs
-tar -xzf my-app-1.0.0-portable.tar.gz
-cd my-app-1.0.0-portable
-./run.sh
 ```
 
 ## 🎯 Key Principles
