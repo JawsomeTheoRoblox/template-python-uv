@@ -21,7 +21,7 @@ git clone https://github.com/yourusername/your-project
 cd your-project
 
 # 2. Run setup (downloads Python 3.13.9 first time, ~2 minutes)
-./setup-portable.sh
+./setup.sh
 
 # 3. Activate and run
 source .venv/bin/activate
@@ -38,7 +38,7 @@ your-project/
 ├── .venv/                # Virtual environment with dependencies
 ├── src/
 │   └── main.py
-├── setup-portable.sh     # Setup script
+├── setup.sh     # Setup script
 └── pyproject.toml
 ```
 
@@ -57,22 +57,6 @@ your-project/
 uv lock
 uv sync
 
-# Create distributable package
-./package-portable.sh
-```
-
-## 📦 Creating Packages
-
-```bash
-# Create self-contained package
-./package-portable.sh
-
-# Result: dist/my-app-1.0.0-portable.tar.gz (~50MB compressed)
-
-# To run on another machine (no Python needed!):
-tar -xzf my-app-1.0.0-portable.tar.gz
-cd my-app-1.0.0-portable
-./run.sh
 ```
 
 ## 🔧 How It Works
@@ -144,12 +128,6 @@ uv lock && uv sync
 # 2. Test your app
 source .venv/bin/activate
 python src/main.py
-
-# 3. Create package
-./package-portable.sh
-
-# 4. Share dist/my-app-1.0.0-portable.tar.gz
-# Users don't need Python installed!
 ```
 
 ## 🎨 Customization
@@ -162,14 +140,6 @@ PYTHON_VERSION="3.13.0"  # Or any version
 ```
 
 Available versions: https://github.com/indygreg/python-build-standalone/releases
-
-### Configure Package
-
-Edit `pyproject.toml`:
-```toml
-name = "my-app"
-version = "1.0.0"
-```
 
 ## 🐛 Troubleshooting
 
@@ -202,23 +172,6 @@ Portable Python is **OS and architecture specific**:
 - ❌ macOS → Linux (use Docker)
 - ❌ x86_64 → arm64 (use Docker)
 - ❌ Windows (use WSL or Docker)
-
-For cross-platform distribution, use Docker instead.
-
-## 🐳 Docker Alternative
-
-If you need cross-platform support, use the included Dockerfile:
-
-```bash
-# Build image
-docker build -t my-app .
-
-# Run
-docker run my-app
-
-# Distribute
-docker save my-app > my-app.tar
-```
 
 ## 🤝 Contributing
 
@@ -291,7 +244,7 @@ flake8 src/ tests/
 pytest tests/
 
 # Verify script works
-./setup-portable.sh --force-clean
+./setup.sh --force-clean
 ```
 
 ### Set Up Commit Message Template (Optional)
