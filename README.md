@@ -49,7 +49,7 @@ your-project/
 ├── CONTRIBUTING.md           # Contribution guidelines
 ├── pyproject.toml            # Project configuration
 ├── README.md
-├── SETUP_QUICK_REF.md
+├── QUICK_REFERENCE.md
 ├── setup.sh         # Setup script
 ├── uv.lock
 └── verify-python-version.sh  # Version checker
@@ -170,7 +170,7 @@ source .venv/bin/activate && python --version
 
 ## 📚 Documentation
 
-- [Setup Guide](SETUP_GUIDE.md) - Detailed guide
+- [Setup Guide](README.md) - Detailed guide
 - [Quick Reference](QUICK_REFERENCE.md) - Command cheat sheet
 - [UV Documentation](https://github.com/astral-sh/uv)
 
